@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Retenedor : MonoBehaviour
+public class retenedor : MonoBehaviour
 {
 	public float num, alt;
     // Start is called before the first frame update
