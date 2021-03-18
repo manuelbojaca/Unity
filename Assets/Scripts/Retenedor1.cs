@@ -14,7 +14,6 @@ public class Retenedor1 : MonoBehaviour
     void Start()
     {
     	objArr = new GameObject[4];
-    	num = 1.5f;
     	
         float x, y;
 		
@@ -43,7 +42,14 @@ public class Retenedor1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (tr.position.y < 250)
+        if (tr.position.y < 100)
+        {
+        	for(int i = 0;i<4;i++)
+        	{
+        		Destroy (objArr[i]);
+        	}
+        }
+        if (Input.GetKey(KeyCode.Q))
         {
         	for(int i = 0;i<4;i++)
         	{

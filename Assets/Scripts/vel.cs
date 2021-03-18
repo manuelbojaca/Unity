@@ -20,6 +20,7 @@ public class vel : MonoBehaviour
     	maxVel = 0f;
     	velocidad = GetComponent<TMP_Text>();
         rb = body.GetComponent(typeof(Rigidbody)) as Rigidbody;
+
     }
 
     // Update is called once per frame
@@ -28,7 +29,7 @@ public class vel : MonoBehaviour
     	//speed = Mathf.RoundToInt(rb.velocity.magnitude * 3600 / 1000);
     	speed = Mathf.RoundToInt(rb.velocity.magnitude);
 
-    	textSpd = speed + "m/s " + maxVel + "m/s " + impacto+"J";
+    	textSpd = speed + "m/s " + maxVel + "m/s " + impacto +"J";
     	velocidad.text = textSpd;
     	if (deltaSpd >= speed) 
     	{
